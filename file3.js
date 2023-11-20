@@ -19,13 +19,13 @@ console.log(typeof user[symbl]);
 
 user.name ="Ibt AKhtar" // value will not change as its freeze before change
 
-console.log(user);
+// console.log(user);
 
 user.greet =function(){
-    console.log(`Hello There ${this.name}`);
+    // console.log(`Hello There ${this.name}`);
 }
 
-console.log(user.greet());  
+// console.log(user.greet());  
 
 //Singleton Obj
 const n = new Object()
@@ -42,7 +42,7 @@ const n1 = {
         }
     }
 }
-console.log(n1.fullName.userFullname.firstName);
+// console.log(n1.fullName.userFullname.firstName);
 
 //Conbing or Merging Obj
 
@@ -58,4 +58,16 @@ const obj3 = Object.assign({}, obj1, obj2)// For Combine or Merging
 // console.log(obj3);
 
 const obj4 = {...obj1,...obj2} // For Combine or Merging
-console.log(obj4);
+// console.log(obj4);
+
+//Array De-Stracture
+
+const course ={
+    name:"Sham",
+    age:23,
+    fee:'999'
+}
+const{name: fname} = course//here for changing name if long name = course
+const{name} = course//without changing name
+console.log(fname);
+console.log(name);

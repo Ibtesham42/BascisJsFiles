@@ -26,3 +26,36 @@ user.greet =function(){
 }
 
 console.log(user.greet());  
+
+//Singleton Obj
+const n = new Object()
+// console.log(n);
+
+//Nesting obj
+
+const n1 = {
+    email: "ias@gmail.com",
+    fullName:{                           //nested obj
+        userFullname:{                   //nested obj
+            firstName:"Ibt",
+            lastName:"Sham"
+        }
+    }
+}
+console.log(n1.fullName.userFullname.firstName);
+
+//Conbing or Merging Obj
+
+const obj1 = {
+    1:'a',
+    2:'b'
+}
+const obj2 = {
+    3:'c',
+    4:'d'
+}
+const obj3 = Object.assign({}, obj1, obj2)// For Combine or Merging
+// console.log(obj3);
+
+const obj4 = {...obj1,...obj2} // For Combine or Merging
+console.log(obj4);

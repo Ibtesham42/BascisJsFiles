@@ -34,7 +34,7 @@ new Promise(function(resolve, reject){
 //.............Or...................
 const promise4 = new Promise(function(resolve,reject){ // use resolve n reject
     setTimeout(function(){
-        let error = true
+        let error = false
         if(!error)
         {
             resolve({username:"Ibtesham",pass:"2233"})
